@@ -8,8 +8,5 @@ pub struct Args {
     #[arg(short, long)]
     pub input: String,
 
-    /// Number of threads to use
-    #[arg(short, long, default_value_t = 8)]
-    pub threads: usize,
 }
 
