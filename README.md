@@ -8,8 +8,9 @@ SeqGuard is a Rust-based program for FASTQ checking, mainly for Phred+33 FASTQ. 
 
 
 ## Installation
-Download a ready-to-use binary from the release
-You may have to change the file permissions to execute it with `chmod +x seqgurad;`
+Download a ready-to-use binary from the release page.
+
+You may have to change the file permissions with `chmod +x seqgurad;`
 
 
 ## Usage
