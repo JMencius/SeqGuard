@@ -21,7 +21,6 @@ Usage: seqguard [OPTIONS] --input <INPUT>
 
 Options:
   -i, --input <INPUT>      Path to .fastq or .fastq.gz file
-  -t, --threads <THREADS>  Number of threads to use [default: 8]
   -h, --help               Print help
   -V, --version            Print version
 ``` 
@@ -30,7 +29,7 @@ Options:
 ### Examples
 ```
 seqgurad -i test.fastq;
-seqgurad -i test.fastq -t 32 > result.txt;
+seqgurad -i test.fastq > result.txt;
 ```
 
 
@@ -39,10 +38,10 @@ Small FASTQ files are provided (here)[./tests]. You can use it as input for test
 
 
 ## Resource consumption
-For a 36G FASTQ file, memory peak at ~40G, finished in 5 minutes with 48 cores.
+For a 40G FASTQ file, memory peak at ~2G, finished in ~1 minute.
 
 The actual performance may vary depending on factors such as I/O speed, memory speed, and CPU capabilities.
 
 
 ## Other information
-Developed on `rustc 1.77.2 (25ef9e3d8 2024-04-09)`, tested on single AMD EPYC 7K62, 256G of DDR4 2400 RAM, and HDD storage.
+Developed on `rustc 1.77.2 (25ef9e3d8 2024-04-09)`, tested on single AMD EPYC 7K62, 256G of DDR4 2400 RAM, and SATA SSD storage.
